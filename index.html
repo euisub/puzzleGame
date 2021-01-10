@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="image-upload-wrap">
+    <input class="file-upload-input" type='file' data-width="400px;" data-height="400px;" onchange="readURL(this);" accept="image/*" />
+    
+  </div>
+
+    <div class="wrap-all">
+        <h1>FunFun 한 Puzzle Game</h1>
+        <p>Image 권장 Size 400*400</p>
+        <div>
+        <button class="upload-button" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Upload Image</button>
+        <button class="random-button" type="button" >Random Image</button>
+        </div>
+        <div class="container">
+            <p class="play-time">0</p>
+            <ul class="image-container">
+                
+            </ul>
+            <button class="hint-button">Hint</button>
+            <div class="hint-color">
+              <button class="hint-white">white</button>
+              <button class="hint-black">black</button>
+            </div>
+            
+            
+            <button class="start-button">Start</button>
+            <p class="game-text">Completed!</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</body>
+</html>
