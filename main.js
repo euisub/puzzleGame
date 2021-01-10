@@ -7,6 +7,7 @@ const randomButton = document.querySelector(".random-button")
 const imgIndex = document.querySelector(".img-index")
 const file = document.querySelector(".file-upload-input")
 const hintButton = document.querySelector(".hint-button")
+const hintHidden = document.querySelector(".hidden-button")
 const hintWhite = document.querySelector(".hint-white")
 const hintBlack = document.querySelector(".hint-black")
 
@@ -46,6 +47,7 @@ function reSet(){
     hintButton.style.display = "none";
     hintWhite.style.display = "none";
     hintBlack.style.display = "none";
+    hintHidden.style.display = "none";
     clearInterval(timeInterval)
 }
 
@@ -104,6 +106,7 @@ function setGame(){
 
     setTimeout(()=>{
             hintButton.style.display = "block";
+            hintHidden.style.display = "block";
             hintWhite.style.display = "block";
             hintBlack.style.display = "block";
     },5000)
@@ -175,6 +178,10 @@ hintButton.addEventListener('click', () =>{
     console.log("aa")
     tiles.forEach(tile=>tile.style.fontSize = "1rem")
 } )
+
+hintHidden.addEventListener('click', () =>{
+    tiles.forEach(tile=>tile.style.fontSize = "0")
+})
 
 hintWhite.addEventListener('click',() => {
     tiles.forEach(tile=>tile.style.color = "white")

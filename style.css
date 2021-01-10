@@ -61,6 +61,7 @@ li {
 }
 
 .hint-button,
+.hidden-button,
 .hint-white,
 .hint-black {
   background: var(--facebook);
@@ -75,20 +76,30 @@ li {
   display: flex;
 }
 
-.hint-white {
+.hint-content {
+  display: flex;
+}
+
+.hint-button {
+  margin-right: 5px;
+}
+
+.hint-white,
+.hidden-button {
+  margin-left: 5px;
   margin-right: 5px;
 }
 
 .hint-black {
   margin-left: 5px;
 }
-
 .upload-button:hover,
 .random-button:hover,
 .start-button:hover,
 .hint-button:hover,
 .hint-white:hover,
-.hint-black:hover {
+.hint-black:hover,
+.hidden-button:hover {
   background: #67c23a;
 }
 
