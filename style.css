@@ -219,3 +219,17 @@ li {
 	justify-content: space-between;
 	align-content: space-between;
 }
+
+
+.kakao_2{
+	margin-top: 10px;
+	width:680px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.size-up{
+	width: 320px;
+}
