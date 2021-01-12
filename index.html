@@ -1,78 +1,151 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- 네이버 -->
-	<meta name="naver-site-verification" content="fc7b55e8524578c11ea847a77e6e061803ed1a74" />
-	<meta name="title" content="FunFun 한 퍼즐게임">
-	<meta name="description" content="랜덤한 이미지 or 당신의 이미지를 업로드하여 퍼즐게임을 할 수 있습니다.">
-	<link rel="canonical" href="https://funfunpuzzlegame.netlify.app//index.html">
-	
-	<META name="robots" content="index,follow" />
-	<META name="Subject" content="퍼즐게임"/>
-	
-	
-	<META name="Keywords" content="퍼즐게임 심심해 Puzzle 퍼즐 게임 재밌는 game 아동퍼즐 퍼즐액자 "/>
-	<META name="Author" content="Euisub"/>
-	
-	<META name="Robots" content="ALL"/>
-	
-	
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="FunFun 한 퍼즐게임">
-	<meta property="og:description" content="랜덤한 이미지 or 당신의 이미지를 업로드하여 퍼즐게임을 할 수 있습니다.">
-	<meta property="og:image" content="http://funfunpuzzlegame.netlify.app/article/article1_featured_image.jpg">
-	<meta property="og:url" content="http://funfunpuzzlegame.netlify.app/article/article1.html">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- 네이버 -->
+        <meta name="naver-site-verification" content="fc7b55e8524578c11ea847a77e6e061803ed1a74" />
+        <meta name="title" content="FunFun 한 퍼즐게임" />
+        <meta
+            name="description"
+            content="랜덤한 이미지 or 당신의 이미지를 업로드하여 퍼즐게임을 할 수 있습니다."
+        />
+        <link rel="canonical" href="https://funfunpuzzlegame.netlify.app//index.html" />
 
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="FunFun 한 퍼즐게임">
-	<meta name="twitter:description" content="랜덤한 이미지 or 당신의 이미지를 업로드하여 퍼즐게임을 할 수 있습니다.">
-	<meta name="twitter:image" content="http://funfunpuzzlegame.netlify.app/article/article1.html">
-	<meta name="twitter:domain" content="https://funfunpuzzlegame.netlify.app/">
+        <meta name="robots" content="index,follow" />
+        <meta name="Subject" content="퍼즐게임" />
 
-	
-	<!-- ---------------------------------- -->
-	
-	<!-- google -->
-	<meta name="google-site-verification" content="URnUOSUmKcyRuNkkA9c6hOGBRl_dYz3tYW6RVk31GT0" />
-	<!-- ---------------------------------- -->
-    <title>Puzzle Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+        <meta
+            name="Keywords"
+            content="퍼즐게임 심심해 Puzzle 퍼즐 게임 재밌는 game 아동퍼즐 퍼즐액자 "
+        />
+        <meta name="Author" content="Euisub" />
 
-  <div class="image-upload-wrap">
-    <input class="file-upload-input" type='file' data-width="400px;" data-height="400px;" onchange="readURL(this);" accept="image/*" />
-    
-  </div>
+        <meta name="Robots" content="ALL" />
 
-    <div class="wrap-all">
-        <h1>FunFun 한 Puzzle Game</h1>
-        <p>Image 권장 Size 400*400</p>
-        <div>
-        <button class="upload-button" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Upload Image</button>
-        <button class="random-button" type="button" >Random Image</button>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="FunFun 한 퍼즐게임" />
+        <meta
+            property="og:description"
+            content="랜덤한 이미지 or 당신의 이미지를 업로드하여 퍼즐게임을 할 수 있습니다."
+        />
+        <meta
+            property="og:image"
+            content="http://funfunpuzzlegame.netlify.app/article/article1_featured_image.jpg"
+        />
+        <meta
+            property="og:url"
+            content="http://funfunpuzzlegame.netlify.app/article/article1.html"
+        />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="FunFun 한 퍼즐게임" />
+        <meta
+            name="twitter:description"
+            content="랜덤한 이미지 or 당신의 이미지를 업로드하여 퍼즐게임을 할 수 있습니다."
+        />
+        <meta
+            name="twitter:image"
+            content="http://funfunpuzzlegame.netlify.app/article/article1.html"
+        />
+        <meta name="twitter:domain" content="https://funfunpuzzlegame.netlify.app/" />
+
+        <!-- ---------------------------------- -->
+
+        <!-- google -->
+        <meta
+            name="google-site-verification"
+            content="URnUOSUmKcyRuNkkA9c6hOGBRl_dYz3tYW6RVk31GT0"
+        />
+        <!-- ---------------------------------- -->
+        <title>Puzzle Game</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="image-upload-wrap">
+            <input
+                class="file-upload-input"
+                type="file"
+                data-width="400px;"
+                data-height="400px;"
+                onchange="readURL(this);"
+                accept="image/*"
+            />
         </div>
-        <div class="container">
-            <p class="play-time">0</p>
-            <ul class="image-container">
-                
-            </ul>
-            <div class="hint-content">
-              <button class="hint-button">Hint_</button>
-              <button class="hidden-button">Hide_</button>
-              <button class="hint-white">white</button>
-              <button class="hint-black">black</button>
+
+        <div class="wrap-all">
+            <h1>FunFun 한 Puzzle Game</h1>
+            <p>Image 권장 Size 400*400</p>
+            <div>
+                <button
+                    class="upload-button"
+                    type="button"
+                    onclick="$('.file-upload-input').trigger( 'click' )"
+                >
+                    Upload Image
+                </button>
+                <button class="random-button" type="button">Random Image</button>
             </div>
-            
-            
-            <button class="start-button">Start</button>
-            <p class="game-text">Completed!</p>
-        </div>
-    </div>
+            <div class="container">
+                <p class="play-time">0</p>
+                <ul class="image-container"></ul>
+                <div class="hint-content">
+                    <button class="hint-button">Hint_</button>
+                    <button class="hidden-button">Hide_</button>
+                    <button class="hint-white">white</button>
+                    <button class="hint-black">black</button>
+                </div>
 
-    <script src="main.js"></script>
-    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-</body>
+                <button class="start-button">Start</button>
+                <p class="game-text">Completed!</p>
+            </div>
+        </div>
+        <div class="advertisement">
+            <script src="https://ads-partners.coupang.com/g.js"></script>
+            <script>
+                new PartnersCoupang.G({
+                    id: 414703,
+                    template: 'carousel',
+                    trackingCode: 'AF2483832',
+                    width: '680',
+                    height: '140',
+                });
+            </script>
+
+            <div class="kakao">
+                <ins
+                    class="kakao_ad_area"
+                    style="display: none;"
+                    data-ad-unit="DAN-bOG0wYAJejzDNEEk"
+                    data-ad-width="320"
+                    data-ad-height="100"
+                ></ins>
+                <script
+                    type="text/javascript"
+                    src="//t1.daumcdn.net/kas/static/ba.min.js"
+                    async
+                ></script>
+            </div>
+
+            <div class="cupang">
+                <a href="https://coupa.ng/bPtAH1" target="_blank" referrerpolicy="unsafe-url"
+                    ><img
+                        src="https://ads-partners.coupang.com/banners/414711?subId=&traceId=V0-301-879dd1202e5c73b2-I414711&w=320&h=100"
+                        alt=""
+                /></a>
+
+                <a href="https://coupa.ng/bPtANJ" target="_blank" referrerpolicy="unsafe-url"
+                    ><img
+                        src="https://ads-partners.coupang.com/banners/414715?subId=&traceId=V0-301-bae0f72e5e59e45f-I414715&w=320&h=100"
+                        alt=""
+                /></a>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+        <script
+            class="jsbin"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+        ></script>
+    </body>
 </html>

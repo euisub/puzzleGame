@@ -197,3 +197,25 @@ li {
   border: 0px dashed #1fb264;
   position: relative;
 }
+
+.advertisement{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.kakao{
+	margin-top: 10px;
+	width:680px;
+}
+
+.cupang{
+	margin-top: 10px;
+	width:680px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: space-between;
+}
