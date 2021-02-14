@@ -77,10 +77,10 @@ function createImageTiles(url){
         li.style.color = "#FFFFFF"
         li.style.fontSize ="0"
         // console.log(`${x} , ${y}`)
-        x = x - 100;
-        if(x === - 400){
+        x = x - 80;
+        if(x === - 320){
             x = 0;
-            y = y - 100;
+            y = y - 80;
         }        
         tempArray.push(li);
         
@@ -168,7 +168,7 @@ startButton.addEventListener('click', () =>{
 
 randomButton.addEventListener('click', () =>{
     let num =  Math.floor(Math.random()*100);
-    let url = `https://placeimg.com/400/400/${num}`;
+    let url = `https://placeimg.com/320/320/${num}`;
 
     createImageTiles(url)
 })
@@ -206,8 +206,8 @@ function readURL(input) {
       };
   
       reader.readAsDataURL(input.files[0]);
-      file.style.width = "400px";
-      file.style.height = "400px"
+      file.style.width = "320px";
+      file.style.height = "320px"
       
     } else {
    

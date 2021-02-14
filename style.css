@@ -44,8 +44,8 @@ ul {
 }
 
 li {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 
   /* background: url("https://placeimg.com/400/400/0"); */
 }
@@ -232,4 +232,10 @@ li {
 
 .size-up{
 	width: 320px;
+}
+
+@media screen and (max-width: 480px){
+	h1{
+		font-size: 1.2rem;
+	}
 }
