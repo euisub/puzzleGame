@@ -50,6 +50,60 @@ li {
   /* background: url("https://placeimg.com/400/400/0"); */
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+
+.logo-text {
+  font-size: 2rem;
+  padding: 1em;
+  text-align: left;
+  /* border: 1px solid black; */
+}
+
+
+
+
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+justify-content: center;
+    align-items: center;
+  padding: 1em;
+    font-family: 'Jua', sans-serif;
+}
+
+.ul-content{
+    display: flex;
+	border: 0;
+}
+
+.ul-content >li{
+	width: auto;
+ 	height: auto;
+    
+    
+    
+}
+
+.ul-content >li >a{
+	
+	box-sizing: none;
+	padding: 1em;
+	border: 1px solid #F9F2E6;
+}
+
+.ul-content >li> a:hover{
+    border: 1px solid black;
+}
+
+
+
+
 .upload-button,
 .random-button,
 .start-button {
@@ -78,6 +132,8 @@ li {
 
 .hint-content {
   display: flex;
+  flex-wrap: wrap;
+  
 }
 
 .hint-button {
@@ -235,6 +291,10 @@ li {
 }
 
 @media screen and (max-width: 480px){
+	.ul-content{
+        display: none;
+    }
+	
 	h1{
 		font-size: 1.2rem;
 	}
