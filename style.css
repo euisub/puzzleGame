@@ -295,6 +295,11 @@ justify-content: center;
         display: none;
     }
 	
+	.hint-content{
+		justify-content: space-around;
+		
+	}
+	
 	h1{
 		font-size: 1.2rem;
 	}
