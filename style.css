@@ -292,10 +292,14 @@ justify-content: center;
 }
 
 .kakao-{
-	width:100%;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
+	align-content:center;
+}
+
+.kakao- ins{
+	width:auto;
 }
 
 #kakao-size{
