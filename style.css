@@ -3,6 +3,7 @@ body {
   background-color: #eeeeee;
   margin: 0;
   padding: 0;
+  overflow-x:hidden;
 }
 
 :root {
@@ -289,6 +290,18 @@ justify-content: center;
 .size-up{
 	width: 320px;
 }
+
+.kakao-{
+	width:100%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#kakao-size{
+	width:320px;
+}
+
 
 @media screen and (max-width: 480px){
 	.ul-content{
